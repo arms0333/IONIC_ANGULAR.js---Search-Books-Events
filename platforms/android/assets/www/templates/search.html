@@ -1,0 +1,30 @@
+<ion-view view-title="Search">
+  <ion-content>
+<div class="item item-input-inset">
+    <label class="item-input-wrapper">
+      <input id="valueData" type="text" placeholder="Search" ng-model="search">
+    </label>
+    <button ng-click="search = '' "class="button ion-android-close input-button button-small" ng-show="search.length">
+    </button>
+</div>
+<ion-item class="wrapper">
+<md-button ng-click="searchIt()" class="md-button">Button</md-button>
+</ion-item>
+
+  <!--<ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="doRefresh()">-->
+    
+<ion-list ng-repeat="a in theArray">
+  <ion-item ui-sref="searchdescription({categoryID: a.id})" ui-sref-active="active" role="button" on-swipe-left="onSwipeLeft()">
+    <!--<ion-item>-->
+  {{a.best_book.title}}
+  </ion-item>
+  <ion-item>
+    <img src={{a.best_book.small_image_url}} height="150px" width="150px" on-swipe-left="onSwipeLeft()">
+  </ion-item>
+</ion-list>
+  <!--</ion-refresher>-->
+</ion-view>
+
+

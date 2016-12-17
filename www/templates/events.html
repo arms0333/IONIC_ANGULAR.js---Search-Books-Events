@@ -1,0 +1,24 @@
+<ion-view view-title="Events">
+  <ion-content>
+ <label class="item item-input">
+  <span class="input-label">Month</span>
+  <input type="month" id="valueDataEvent" ng-model="valueDataEvent">
+</label>
+
+ <label class="item item-input">
+  <span class="input-label">Month</span>
+  <input type="month" id="valueDataEvent2" ng-model="valueDataEvent2">
+</label>
+
+<ion-item class="wrapper">
+<md-button ng-click="searchEvents()" class="md-button">Button</md-button>
+</ion-item>
+
+<ion-list ng-repeat="a in myNewEvents">
+  <ion-item>
+  {{a.title}}
+  </ion-item>
+</ion-list>
+
+</ion-view>
+

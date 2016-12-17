@@ -1,0 +1,13 @@
+<ion-view>
+
+<ion-list ng-repeat="a in myCategoryBooks track by $index">
+    <ion-item>
+    <img src={{a.best_book.small_image_url}} height="150px" width="150px">
+    </ion-item>
+    <ion-item>
+    {{a.best_book.title}}
+    </ion-item>
+  
+</ion-list>
+
+</ion-view>

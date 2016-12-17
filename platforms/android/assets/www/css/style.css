@@ -1,0 +1,37 @@
+/* Empty. Add your own CSS if you like */
+p{
+    text-align: center;
+     font-weight: 900;
+}
+
+#paragraph{
+    font-size: 1.4rem;
+     color: red;
+    text-align: justify-all;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+button.md-button {
+  min-width: 88px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: none;
+  outline: none;
+  background-color: rgba(107, 203, 91, 0.96);
+  color: green;
+  position: relative;
+  top: 50%;
+ 
+}
+.wrapper {
+    text-align: center;
+}

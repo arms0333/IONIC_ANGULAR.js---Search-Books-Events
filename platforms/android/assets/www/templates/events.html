@@ -1,0 +1,33 @@
+<ion-view view-title="Events">
+  <ion-content>
+          <label class="item item-input">
+  <span class="input-label">Month</span>
+  <input type="month">
+</label>
+<div class="item item-input-inset">
+    <label class="item-input-wrapper">
+      <input id="valueDataEvent" type="text" placeholder="Search" ng-model="search">
+    </label>
+    <button ng-click="search = '' "class="button ion-android-close input-button button-small" ng-show="search.length">
+    </button>
+</div>
+<ion-item class="wrapper">
+<md-button ng-click="searchEvents()" class="md-button">Button</md-button>
+</ion-item>
+
+  <!--<ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="doRefresh()">-->
+
+<ion-list ng-repeat="a in theArrayEvent">
+  <!--<ion-item ui-sref="searchdescription({categoryID: a.id})" ui-sref-active="active" role="button" on-swipe-left="onSwipeLeft()">-->
+    <ion-item>
+  {{a.event.title}}
+  </ion-item>
+  <ion-item>
+    <img src={{a.event.image_url}} height="150px" width="150px">
+  </ion-item>
+</ion-list>
+  <!--</ion-refresher>-->
+</ion-view>
+

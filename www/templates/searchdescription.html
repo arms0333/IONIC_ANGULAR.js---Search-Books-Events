@@ -1,0 +1,22 @@
+<ion-view>
+     <ion-content>
+
+<ion-list>
+
+  <ion-item>
+    <ion-thumbnail item-left>
+      <img src=" {{recievedData.GoodreadsResponse.book.image_url}}">
+    </ion-thumbnail>
+    <div class="item item-text-wrap">
+  {{recievedData.GoodreadsResponse.book.title}}
+</div>
+    
+   <p> Author: {{recievedData.GoodreadsResponse.book.authors.author.name}}</p>
+
+ <div class="item item-text-wrap">
+   {{recievedData.GoodreadsResponse.book.description}}
+</div>
+  </ion-item>
+</ion-list>
+ </ion-content>
+</ion-view>
